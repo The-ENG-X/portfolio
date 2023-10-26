@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>{{ name }}</title>
+</head>
+<body>
+    <header>
+        <h1>{{ name }}</h1>
+        <h2>Full Stack Developer</h2>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>about me</h3>
+            <p>Sporty and Creative Person</p>
+            <p>Photography is my best Hobby</p>
+            <p>I would like to challenge you in Table Tennis</p>
+        </section>
+        <section>
+            <h3>Skills</h3>
+            <p>Work with these tools and languages every day</p>
+            <ul>
+                {% for skill in skills %}
+                <li>{{ skill }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section>
+            <h3>Contact</h3>
+            <p>Try to find me</p>
+        </section>
+    </main>
+    <footer>
+        <h3>Credits</h3>
+        <p>Short thank you text and link to the Techstarter website in a new tab: <a href="https://techstarter.com" target="_blank" rel="noopener">Techstarter</a></p>
+    </footer>
+</body>
+</html>
